@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soal PSAS Matematika Tingkat Lanjut Kelas XII — Tipe B</title>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]'], ['$$', '$$']],
+    packages: {'[+]': ['ams']}
+  },
+  options: {
+    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root {
+    --primary: #1e3a8a;
+    --primary-light: #eff6ff;
+    --accent: #0f766e;
+    --border: #cbd5e1;
+    --text: #1e293b;
+    --muted: #64748b;
+    --bg: #f8fafc;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 980px;
+    margin: 24px auto;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+    overflow: hidden;
+  }
+  header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%);
+    color: #ffffff;
+    padding: 24px 32px;
+  }
+  header h1 {
+    margin: 0 0 6px 0;
+    font-size: 1.42rem;
+    letter-spacing: 0.2px;
+  }
+  header p {
+    margin: 0;
+    opacity: 0.92;
+    font-size: 0.94rem;
+  }
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 14px 32px;
+    background: #f1f5f9;
+    border-bottom: 1px solid var(--border);
+  }
+  .action-btn {
+    padding: 8px 14px;
+    border: 1px solid var(--accent);
+    background: #ffffff;
+    color: var(--accent);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.88rem;
+    cursor: pointer;
+    transition: all 0.18s ease;
+  }
+  .action-btn:hover {
+    background: var(--accent);
+    color: #ffffff;
+  }
+  .content {
+    padding: 28px 32px;
+  }
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 10px;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .section-header h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: var(--primary);
+  }
+  .part-banner {
+    background: var(--primary-light);
+    border-left: 5px solid var(--primary);
+    padding: 10px 16px;
+    margin: 28px 0 16px 0;
+    border-radius: 0 8px 8px 0;
+  }
+  .part-banner:first-child {
+    margin-top: 0;
+  }
+  .part-banner h3 {
+    margin: 0 0 2px 0;
+    font-size: 1.08rem;
+    color: var(--primary);
+  }
+  .part-banner p {
+    margin: 0;
+    font-size: 0.88rem;
+    color: var(--muted);
+  }
+  .badge {
+    background: var(--primary-light);
+    color: var(--primary);
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 0.84rem;
+    font-weight: 700;
+  }
+  .question-card {
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    background: #ffffff;
+    page-break-inside: avoid;
+  }
+  .q-title {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
+  .q-num {
+    min-width: 28px;
+    height: 28px;
+    background: var(--primary);
+    color: #ffffff;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.88rem;
+    margin-top: 2px;
+  }
+  .q-text {
+    flex: 1;
+    font-size: 1rem;
+  }
+  .topic-tag {
+    display: inline-block;
+    font-size: 0.74rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: #e2e8f0;
+    color: #334155;
+    margin-bottom: 4px;
+  }
+  .options-list {
+    list-style: none;
+    padding-left: 38px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 8px 18px;
+  }
+  .options-list.vertical {
+    grid-template-columns: 1fr;
+  }
+  .option-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 8px;
+    border-radius: 6px;
+  }
+  .opt-letter {
+    font-weight: 700;
+    color: var(--primary);
+    min-width: 22px;
+  }
+  .tf-options {
+    display: flex;
+    gap: 24px;
+    padding-left: 38px;
+    margin-top: 6px;
+  }
+  .tf-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-weight: 600;
+    background: #f8fafc;
+  }
+  .cb-list {
+    list-style: none;
+    padding-left: 38px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .cb-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 6px 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    background: #f8fafc;
+  }
+  .cb-square {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    min-width: 17px;
+    border: 2px solid var(--primary);
+    border-radius: 3px;
+    margin-top: 3px;
+    background: #ffffff;
+  }
+  @media print {
+    body { background: #ffffff; }
+    .container { box-shadow: none; border: none; margin: 0; max-width: 100%; }
+    .toolbar { display: none; }
+    header { background: #1e3a8a !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .content { padding: 12px 0; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Penilaian Sumatif Akhir Semester (PSAS) — Matematika Tingkat Lanjut Kelas XII</h1>
+    <p>Paket Soal Tipe B • Pilihan Ganda (24), Benar/Salah (10), dan Checkbox (6) — Total 40 Soal</p>
+  </header>
+
+  <div class="toolbar">
+    <button class="action-btn" onclick="window.print()">Cetak / Simpan PDF</button>
+  </div>
+
+  <div class="content">
+    <div id="tipeB">
+      <div class="section-header">
+        <h2>SOAL PSAS MATEMATIKA TINGKAT LANJUT — TIPE B</h2>
+        <span class="badge">Total 40 Butir Soal</span>
+      </div>
+      <div id="body-tipeB"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const letters = ['A', 'B', 'C', 'D', 'E'];
+
+const dataTipeB = {
+  pg: [
+    // I.A. LINGKARAN (6 Soal: Nomor 1 - 6)
+    {
+      topik: "Lingkaran",
+      q: "Persamaan lingkaran yang berpusat di \\((0,0)\\) dan mempunyai diameter \\(30\\text{ cm}\\) adalah ….",
+      opts: [
+        "\\(x^2 + y^2 = 225\\)",
+        "\\(x^2 + y^2 = 300\\)",
+        "\\(x^2 + y^2 = 450\\)",
+        "\\(x^2 + y^2 = 600\\)",
+        "\\(x^2 + y^2 = 900\\)"
+      ]
+    },
+    {
+      topik: "Lingkaran",
+      q: "Diketahui persamaan lingkaran \\(x^2 + y^2 + 8x - 6y - 11 = 0\\). Pusat dan jari-jari dari lingkaran tersebut berturut-turut adalah ….",
+      opts: [
+        "\\((4, -3)\\) dan \\(6\\)",
+        "\\((-4, -3)\\) dan \\(6\\)",
+        "\\((-4, 3)\\) dan \\(6\\)",
+        "\\((4, 3)\\) dan \\(5\\)",
+        "\\((-4, 3)\\) dan \\(5\\)"
+      ]
+    },
+    {
+      topik: "Lingkaran",
+      q: "Persamaan lingkaran yang berpusat di titik \\((-3, 2)\\) dan melalui titik \\((-3, 6)\\) adalah ….",
+      opts: [
+        "\\((x + 3)^2 + (y - 2)^2 = 4\\)",
+        "\\((x - 3)^2 + (y + 2)^2 = 4\\)",
+        "\\((x - 3)^2 + (y + 2)^2 = 16\\)",
+        "\\((x + 3)^2 + (y + 2)^2 = 16\\)",
+        "\\((x + 3)^2 + (y - 2)^2 = 16\\)"
+      ]
+    },
+    {
+      topik: "Lingkaran",
+      q: "Diketahui persamaan lingkaran dengan pusat di \\((a, b)\\) adalah \\(3x^2 + (m - 1)y^2 - 6mx + 12y - 9 = 0\\). Nilai \\(a + b + m\\) adalah ….",
+      opts: ["2", "4", "6", "8", "10"]
+    },
+    {
+      topik: "Lingkaran",
+      q: "Persamaan lingkaran yang sepusat dengan \\(x^2 + y^2 + 4x - 6y - 3 = 0\\) dan melalui titik \\((1, 2)\\) adalah ….",
+      opts: [
+        "\\(x^2 + y^2 + 4x - 6y + 3 = 0\\)",
+        "\\(x^2 + y^2 + 4x - 6y - 3 = 0\\)",
+        "\\(x^2 + y^2 + 4x - 6y + 7 = 0\\)",
+        "\\(x^2 + y^2 - 4x + 6y + 3 = 0\\)",
+        "\\(x^2 + y^2 - 4x + 6y - 7 = 0\\)"
+      ]
+    },
+    {
+      topik: "Lingkaran",
+      q: "Diketahui lingkaran dengan persamaan \\((x + 2)^2 + (y - 3)^2 = 13\\). Persamaan garis singgung pada titik \\((1, 5)\\) yang terletak pada lingkaran tersebut adalah ….",
+      opts: [
+        "\\(3x + 2y - 13 = 0\\)",
+        "\\(3x + 2y + 13 = 0\\)",
+        "\\(3x - 2y + 7 = 0\\)",
+        "\\(2x + 3y - 17 = 0\\)",
+        "\\(2x - 3y + 13 = 0\\)"
+      ]
+    },
+
+    // I.B. LIMIT (9 Soal: Nomor 7 - 15)
+    {
+      topik: "Limit",
+      q: "Nilai dari \\(\\lim_{x \\to 4} \\frac{\\sqrt{3x + 4} - 4}{x - 4}\\) adalah ….",
+      opts: ["\\(\\frac{1}{8}\\)", "\\(\\frac{1}{4}\\)", "\\(\\frac{3}{8}\\)", "\\(\\frac{1}{2}\\)", "\\(\\frac{3}{4}\\)"]
+    },
+    {
+      topik: "Limit",
+      q: "Nilai dari \\(\\lim_{x \\to 3} \\frac{x - 3}{\\sqrt{2x^2 - 2} - 4}\\) adalah ….",
+      opts: ["\\(\\frac{1}{3}\\)", "\\(\\frac{2}{3}\\)", "\\(\\frac{3}{4}\\)", "\\(\\frac{4}{3}\\)", "\\(\\frac{3}{2}\\)"]
+    },
+    {
+      topik: "Limit",
+      q: "Nilai dari \\(\\lim_{x \\to \\infty} \\frac{(3x - 1)^2(2x + 5)^2}{(2x + 1)^3(3x - 2)}\\) adalah ….",
+      opts: ["\\(0\\)", "\\(\\frac{3}{2}\\)", "\\(\\frac{9}{4}\\)", "\\(\\frac{27}{8}\\)", "\\(\\infty\\)"]
+    },
+    {
+      topik: "Limit",
+      q: "Nilai dari \\(\\lim_{x \\to 0} \\frac{\\sin^2(4x)}{2x \\sin x}\\) adalah ….",
+      opts: ["\\(2\\)", "\\(4\\)", "\\(6\\)", "\\(8\\)", "\\(16\\)"]
+    },
+    {
+      topik: "Limit",
+      q: "Nilai dari \\(\\lim_{x \\to 3} \\frac{\\sin(x - 3)}{x^2 - 9}\\) adalah ….",
+      opts: ["\\(-\\frac{1}{6}\\)", "\\(-\\frac{1}{3}\\)", "\\(0\\)", "\\(\\frac{1}{6}\\)", "\\(\\frac{1}{3}\\)"]
+    },
+    {
+      topik: "Limit",
+      q: "Nilai dari \\(\\lim_{x \\to 0} \\frac{\\tan^2(2x) - \\sin^2(2x)}{x^2 \\sin^2(2x)}\\) adalah ….",
+      opts: ["\\(1\\)", "\\(2\\)", "\\(4\\)", "\\(8\\)", "\\(16\\)"]
+    },
+    {
+      topik: "Limit",
+      q: "Nilai dari \\(\\lim_{x \\to 0} \\frac{1 - \\cos 6x}{x \\tan 3x}\\) adalah ….",
+      opts: ["\\(2\\)", "\\(3\\)", "\\(6\\)", "\\(9\\)", "\\(18\\)"]
+    },
+    {
+      topik: "Limit",
+      q: "Sebuah usaha kuliner bakso malang mencatat bahwa jika terjual sebanyak \\(m\\) porsi, keuntungan yang diperoleh dapat dimodelkan dengan fungsi \\(f(m) = \\frac{15m^4 + 8m^2 - 3}{3m^4 + 2m^2 + 5}\\) juta rupiah. Keuntungan yang diperoleh apabila porsi yang terjual sangat banyak (\\(m \\to \\infty\\)) adalah ….",
+      opts: [
+        "3 juta rupiah",
+        "4 juta rupiah",
+        "5 juta rupiah",
+        "6 juta rupiah",
+        "7,5 juta rupiah"
+      ]
+    },
+    {
+      topik: "Limit",
+      q: "Dalam percobaan pemanasan larutan kimia, perubahan suhu larutan terhadap waktu \\(t\\) (menit) dimodelkan oleh fungsi \\(S(t) = \\frac{t^2 + 3t - 10}{t^2 - 4}\\), dengan \\(S(t)\\) dalam derajat Celsius. Suhu larutan mendekati menit ke-2 setelah pemanasan dimulai adalah ….",
+      opts: [
+        "\\(1,25^\\circ\\text{C}\\)",
+        "\\(1,50^\\circ\\text{C}\\)",
+        "\\(1,75^\\circ\\text{C}\\)",
+        "\\(2,00^\\circ\\text{C}\\)",
+        "\\(2,50^\\circ\\text{C}\\)"
+      ]
+    },
+
+    // I.C. TURUNAN (9 Soal: Nomor 16 - 24, termasuk 4 soal khusus no 20-23)
+    {
+      topik: "Turunan",
+      q: "Turunan pertama dari fungsi \\(f(x) = 4\\sqrt{x} - 2x^3\\) adalah ….",
+      opts: [
+        "\\(\\frac{2}{\\sqrt{x}} - 6x^2\\)",
+        "\\(\\frac{4}{\\sqrt{x}} - 6x^2\\)",
+        "\\(2\\sqrt{x} - 6x^2\\)",
+        "\\(\\frac{2}{\\sqrt{x}} - 2x^2\\)",
+        "\\(\\frac{1}{2\\sqrt{x}} - 6x^2\\)"
+      ]
+    },
+    {
+      topik: "Turunan",
+      q: "Turunan pertama dari fungsi \\(f(x) = (5x - 2)(x + 3)\\) adalah ….",
+      opts: [
+        "\\(10x + 13\\)",
+        "\\(10x - 13\\)",
+        "\\(10x - 15\\)",
+        "\\(10x + 12\\)",
+        "\\(10x + 15\\)"
+      ]
+    },
+    {
+      topik: "Turunan",
+      q: "Diketahui fungsi \\(f(x) = (3x^2 + 2)(2x - 5)\\). Turunan pertama dari \\(f(x)\\) adalah \\(f'(x) = \\dots\\)",
+      opts: [
+        "\\(18x^2 - 30x + 4\\)",
+        "\\(18x^2 + 30x + 4\\)",
+        "\\(12x^2 - 30x + 4\\)",
+        "\\(18x^2 - 15x + 4\\)",
+        "\\(6x^2 - 30x + 4\\)"
+      ]
+    },
+    {
+      topik: "Turunan",
+      q: "Turunan pertama dari fungsi \\(f(x) = \\frac{4 - 3x}{2x + 5}\\) dengan \\(x \\neq -\\frac{5}{2}\\) adalah \\(f'(x) = \\dots\\)",
+      opts: [
+        "\\(\\frac{-23}{(2x + 5)^2}\\)",
+        "\\(\\frac{-7}{(2x + 5)^2}\\)",
+        "\\(\\frac{7}{(2x + 5)^2}\\)",
+        "\\(\\frac{23}{(2x + 5)^2}\\)",
+        "\\(\\frac{-23}{2x + 5}\\)"
+      ]
+    },
+    {
+      topik: "Turunan",
+      q: "Gradien garis singgung kurva \\(y = x^3 - 2x^2 + 3x - 4\\) yang melalui titik \\((2, 2)\\) adalah ….",
+      opts: ["5", "6", "7", "8", "9"]
+    },
+    {
+      topik: "Turunan",
+      q: "Gradien garis singgung kurva \\(f(x) = 2x^3 - 3x^2 - 6x + 4\\) yang melalui titik berabsis \\(x = -1\\) adalah ….",
+      opts: ["4", "5", "6", "7", "8"]
+    },
+    {
+      topik: "Turunan",
+      q: "Diketahui garis \\(y = 4x - 5\\) dan kurva \\(y = x^2 + 2x - 4\\) saling bersinggungan. Koordinat titik singgung kedua grafik tersebut adalah ….",
+      opts: ["\\((1, -1)\\)", "\\((2, 3)\\)", "\\((-1, -9)\\)", "\\((0, -5)\\)", "\\((3, 7)\\)"]
+    },
+    {
+      topik: "Turunan",
+      q: "Persamaan garis singgung kurva \\(f(x) = x^2 - x - 4\\) yang tegak lurus dengan garis \\(x + 3y - 6 = 0\\) adalah ….",
+      opts: [
+        "\\(3x - y - 8 = 0\\)",
+        "\\(3x - y + 8 = 0\\)",
+        "\\(3x + y - 4 = 0\\)",
+        "\\(x - 3y - 8 = 0\\)",
+        "\\(x + 3y + 4 = 0\\)"
+      ]
+    },
+    {
+      topik: "Turunan",
+      q: "Jika suatu proyek pembangunan jalan akan diselesaikan dalam \\(x\\) hari, maka biaya proyek per hari adalah \\(\\left(2x + \\frac{800}{x} - 40\\right)\\) juta rupiah. Biaya proyek minimum untuk menyelesaikan seluruh proyek tersebut adalah ….",
+      opts: [
+        "400 juta rupiah",
+        "500 juta rupiah",
+        "600 juta rupiah",
+        "700 juta rupiah",
+        "800 juta rupiah"
+      ]
+    }
+  ],
+
+  // II. BENAR / SALAH (10 Soal: 2 Lingkaran + 4 Limit + 4 Turunan = Nomor 25 - 34)
+  tf: [
+    // Lingkaran (2 Soal: 25 - 26)
+    {
+      topik: "Lingkaran",
+      q: "Sebuah stasiun pemancar sinyal di koordinat \\((2, 5)\\) memiliki jangkauan sejauh \\(25\\text{ km}\\) ke segala arah. Jika sebuah kendaraan berada pada koordinat \\((17, 25)\\), maka kendaraan tersebut masih berada tepat di batas jangkauan sinyal."
+    },
+    {
+      topik: "Lingkaran",
+      q: "Diketahui lingkaran dengan persamaan \\(x^2 + y^2 + 2x - 4y + C = 0\\) menyinggung garis \\(x - y + 7 = 0\\). Nilai \\(C\\) yang memenuhi adalah \\(1\\)."
+    },
+
+    // Limit (4 Soal: 27 - 30)
+    {
+      topik: "Limit",
+      q: "Nilai dari \\(\\lim_{x \\to 4} \\frac{x^2 - 16}{x - 4}\\) adalah \\(8\\)."
+    },
+    {
+      topik: "Limit",
+      q: "Nilai dari \\(\\lim_{x \\to \\infty} \\frac{9x^3 + 4x^2 - 1}{3x^3 - 2x + 5}\\) adalah \\(9\\)."
+    },
+    {
+      topik: "Limit",
+      q: "Nilai dari \\(\\lim_{x \\to 0} \\frac{\\tan 6x}{\\sin 2x}\\) adalah \\(3\\)."
+    },
+    {
+      topik: "Limit",
+      q: "Nilai dari \\(\\lim_{x \\to \\infty} \\left(\\sqrt{x^2 + 8x + 2} - \\sqrt{x^2 - 4x + 1}\\right)\\) adalah \\(12\\)."
+    },
+
+    // Turunan (4 Soal: 31 - 34)
+    {
+      topik: "Turunan",
+      q: "Gradien garis singgung kurva \\(y = x^2 + 4x - 3\\) yang melalui titik \\((1, 2)\\) adalah \\(6\\)."
+    },
+    {
+      topik: "Turunan",
+      q: "Gradien garis singgung kurva \\(f(x) = x^3 + 2x^2 - 5\\) di titik yang berabsis \\(x = 2\\) adalah \\(16\\)."
+    },
+    {
+      topik: "Turunan",
+      q: "Garis \\(y = 6x - 8\\) dan kurva \\(y = x^2 + 2x - 4\\) saling bersinggungan tepat di titik \\((2, 4)\\)."
+    },
+    {
+      topik: "Turunan",
+      q: "Persamaan garis singgung kurva \\(f(x) = x^2 + 2x - 3\\) yang tegak lurus dengan garis \\(x + 4y - 8 = 0\\) adalah \\(y = 4x - 4\\)."
+    }
+  ],
+
+  // III. CHECKBOX (6 Soal: 2 Lingkaran + 2 Limit + 2 Turunan = Nomor 35 - 40)
+  cb: [
+    // Lingkaran (2 Soal: 35 - 36)
+    {
+      topik: "Lingkaran",
+      q: "Diketahui persamaan lingkaran \\(L \\equiv x^2 + y^2 + 6x - 8y - 11 = 0\\). Berilah tanda centang (&#10003;) pada pernyataan-pernyataan berikut yang <strong>benar</strong> (jawaban benar lebih dari satu):",
+      opts: [
+        "Titik pusat lingkaran \\(L\\) berada di koordinat \\((-3, 4)\\).",
+        "Panjang jari-jari lingkaran \\(L\\) adalah \\(6\\) satuan.",
+        "Titik \\((3, 4)\\) terletak tepat pada lingkaran \\(L\\).",
+        "Titik \\((0, 0)\\) terletak di luar lingkaran \\(L\\)."
+      ]
+    },
+    {
+      topik: "Lingkaran",
+      q: "Diketahui lingkaran \\((x + 1)^2 + (y - 2)^2 = 10\\). Berilah tanda centang (&#10003;) pada pernyataan-pernyataan berikut yang <strong>benar</strong> (jawaban benar lebih dari satu):",
+      opts: [
+        "Persamaan garis singgung lingkaran tersebut yang bergradien \\(3\\) adalah \\(3x - y + 15 = 0\\) dan \\(3x - y - 5 = 0\\).",
+        "Titik \\((2, 3)\\) terletak tepat pada lingkaran tersebut.",
+        "Persamaan garis singgung lingkaran di titik \\((2, 3)\\) adalah \\(3x + y - 9 = 0\\).",
+        "Panjang diameter lingkaran tersebut adalah \\(20\\) satuan."
+      ]
+    },
+
+    // Limit (2 Soal: 37 - 38)
+    {
+      topik: "Limit",
+      q: "Perhatikan beberapa bentuk limit fungsi aljabar dan ketakhinggaan berikut. Berilah tanda centang (&#10003;) pada pernyataan-pernyataan yang memiliki nilai limit <strong>benar</strong> (jawaban benar lebih dari satu):",
+      opts: [
+        "\\(\\lim_{x \\to 3} \\frac{x^2 - 7x + 12}{x - 3} = -1\\)",
+        "\\(\\lim_{x \\to 9} \\frac{x - 9}{\\sqrt{x} - 3} = 6\\)",
+        "\\(\\lim_{x \\to \\infty} \\frac{8x^2 - 5x + 2}{4x^2 + 3x - 7} = 2\\)",
+        "\\(\\lim_{x \\to \\infty} \\frac{2x^3 - x + 1}{x^2 + 5x - 3} = 2\\)"
+      ]
+    },
+    {
+      topik: "Limit",
+      q: "Perhatikan beberapa bentuk limit fungsi trigonometri berikut. Berilah tanda centang (&#10003;) pada pernyataan-pernyataan yang memiliki nilai limit <strong>benar</strong> (jawaban benar lebih dari satu):",
+      opts: [
+        "\\(\\lim_{x \\to 0} \\frac{\\sin 8x}{2x} = 4\\)",
+        "\\(\\lim_{x \\to 0} \\frac{\\tan 6x}{\\sin 3x} = 2\\)",
+        "\\(\\lim_{x \\to 0} \\frac{1 - \\cos 4x}{x^2} = 8\\)",
+        "\\(\\lim_{x \\to 0} \\frac{\\tan^2(3x)}{x^2} = 3\\)"
+      ]
+    },
+
+    // Turunan (2 Soal: 39 - 40)
+    {
+      topik: "Turunan",
+      q: "Diketahui fungsi polinomial \\(f(x) = x^3 - 6x^2 + 9x + 2\\). Berilah tanda centang (&#10003;) pada pernyataan-pernyataan berikut yang <strong>benar</strong> (jawaban benar lebih dari satu):",
+      opts: [
+        "Turunan pertama fungsi tersebut adalah \\(f'(x) = 3x^2 - 12x + 9\\).",
+        "Fungsi \\(f(x)\\) naik pada interval \\(x < 1\\) atau \\(x > 3\\).",
+        "Fungsi \\(f(x)\\) turun pada interval \\(1 < x < 3\\).",
+        "Nilai balik minimum fungsi \\(f(x)\\) adalah \\(6\\)."
+      ]
+    },
+    {
+      topik: "Turunan",
+      q: "Suatu pabrik memproduksi \\(x\\) unit barang dengan harga jual per unit sebesar \\((120 - 3x)\\) ribu rupiah. Berilah tanda centang (&#10003;) pada pernyataan-pernyataan berikut yang <strong>benar</strong> (jawaban benar lebih dari satu):",
+      opts: [
+        "Fungsi hasil penjualan total adalah \\(R(x) = 120x - 3x^2\\) ribu rupiah.",
+        "Turunan pertama fungsi hasil penjualan adalah \\(R'(x) = 120 - 6x\\).",
+        "Hasil penjualan mencapai maksimum jika diproduksi sebanyak \\(20\\) unit barang.",
+        "Hasil penjualan maksimum yang diperoleh adalah \\(1.500\\) ribu rupiah."
+      ]
+    }
+  ]
+};
+
+function renderPacket(packet, containerId) {
+  const container = document.getElementById(containerId);
+  let html = '';
+  let globalNum = 1;
+
+  // BAGIAN I: PILIHAN GANDA (1 - 24)
+  html += `
+    <div class="part-banner">
+      <h3>BAGIAN I. PILIHAN GANDA (Nomor 1 – 24)</h3>
+      <p>Pilihlah satu jawaban yang paling tepat (A, B, C, D, atau E)!</p>
+    </div>
+  `;
+  packet.pg.forEach(item => {
+    const isLong = item.opts.some(o => o.length > 42 || o.includes('pmatrix'));
+    const optsHtml = item.opts.map((opt, idx) => `
+      <li class="option-item">
+        <span class="opt-letter">${letters[idx]}.</span>
+        <span>${opt}</span>
+      </li>
+    `).join('');
+
+    html += `
+      <div class="question-card">
+        <div class="q-title">
+          <span class="q-num">${globalNum}</span>
+          <div class="q-text">
+            <div class="topic-tag">${item.topik}</div>
+            <div>${item.q}</div>
+          </div>
+        </div>
+        <ul class="options-list ${isLong ? 'vertical' : ''}">${optsHtml}</ul>
+      </div>
+    `;
+    globalNum++;
+  });
+
+  // BAGIAN II: BENAR / SALAH (25 - 34)
+  html += `
+    <div class="part-banner">
+      <h3>BAGIAN II. BENAR ATAU SALAH (Nomor 25 – 34)</h3>
+      <p>Tentukan apakah pernyataan berikut bernilai <strong>Benar</strong> atau <strong>Salah</strong>!</p>
+    </div>
+  `;
+  packet.tf.forEach(item => {
+    html += `
+      <div class="question-card">
+        <div class="q-title">
+          <span class="q-num">${globalNum}</span>
+          <div class="q-text">
+            <div class="topic-tag">${item.topik}</div>
+            <div>${item.q}</div>
+          </div>
+        </div>
+        <div class="tf-options">
+          <span class="tf-box">&#9711; Benar</span>
+          <span class="tf-box">&#9711; Salah</span>
+        </div>
+      </div>
+    `;
+    globalNum++;
+  });
+
+  // BAGIAN III: CHECKBOX (35 - 40)
+  html += `
+    <div class="part-banner">
+      <h3>BAGIAN III. PILIHAN GANDA KOMPLEKS / CHECKBOX (Nomor 35 – 40)</h3>
+      <p>Pilihlah semua pernyataan yang benar dengan memberi tanda centang (&#10003;) pada kotak yang tersedia!</p>
+    </div>
+  `;
+  packet.cb.forEach(item => {
+    const cbHtml = item.opts.map((opt, idx) => `
+      <li class="cb-item">
+        <span class="cb-square"></span>
+        <span><strong>(${letters[idx]})</strong> ${opt}</span>
+      </li>
+    `).join('');
+
+    html += `
+      <div class="question-card">
+        <div class="q-title">
+          <span class="q-num">${globalNum}</span>
+          <div class="q-text">
+            <div class="topic-tag">${item.topik}</div>
+            <div>${item.q}</div>
+          </div>
+        </div>
+        <ul class="cb-list">${cbHtml}</ul>
+      </div>
+    `;
+    globalNum++;
+  });
+
+  container.innerHTML = html;
+}
+
+renderPacket(dataTipeB, 'body-tipeB');
+</script>
+</body>
+</html>
